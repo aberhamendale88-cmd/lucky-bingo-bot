@@ -5,5 +5,9 @@
     "mongoose": "^9.6.2",
     "socket.io": "^4.8.3",
     "telegraf": "^4.16.3"
+  },
+  "scripts": {
+    "start": "node api/bot.js",
+    "build": "mkdir -p dist && cp public/index.html dist/index.html || echo 'No frontend yet'"
   }
 }
