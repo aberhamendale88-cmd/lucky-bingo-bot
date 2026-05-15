@@ -1,4 +1,12 @@
 {
+  "name": "lucky-bingo-bot",
+  "version": "1.0.0",
+  "description": "Telegram Mini App Bingo Game",
+  "main": "api/bot.js",
+  "scripts": {
+    "start": "node api/bot.js",
+    "build": "echo 'Building frontend...'"
+  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
@@ -6,8 +14,7 @@
     "socket.io": "^4.8.3",
     "telegraf": "^4.16.3"
   },
-  "scripts": {
-    "start": "node api/bot.js",
-    "build": "mkdir -p dist && cp public/index.html dist/index.html || echo 'No frontend yet'"
+  "engines": {
+    "node": "20.x"
   }
 }
