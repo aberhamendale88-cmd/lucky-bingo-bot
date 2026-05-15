@@ -1,45 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="theme-color" content="#121212" />
-    <meta
-      name="description"
-      content="Lucky Bingo - Telegram Mini App Game"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Bingo</title>
-    
-    <style>
-      /* ገጹ ገና ሲከፈት ጥቁር ሆኖ እንዲቆይ (Flickering ለመከላከል) */
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-        color: white;
-        overflow-x: hidden;
-      }
-    </style>
-  </head>
-  <body>
+    <link rel="stylesheet" href="src/App.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+
     <script>
-      // ቴሌግራም ሚኒ አፑ ዝግጁ መሆኑን ማሳወቅ
-      const tg = window.Telegram.WebApp;
-      tg.ready();
-      tg.expand(); // ሙሉ ስክሪን እንዲሆን ያደርገዋል
-      
-      // የቴሌግራም የጭንቅላት ከለር (Header) ከዲዛይኑ ጋር እንዲሄድ
-      tg.setHeaderColor('#1f1f1f');
-      tg.setBackgroundColor('#121212');
+        // ቴሌግራም ሚኒ አፕ መዘጋጀቱን ማረጋገጥ
+        const tg = window.Telegram.WebApp;
+        tg.ready();
+        tg.expand(); // ሙሉ ስክሪን እንዲሆን ያደርጋል
+
+        // የቴሌግራም የጭንቅላት ክፍል (Header) ከዲዛይኑ ጋር እንዲሄድ
+        tg.setHeaderColor('#1f1f1f');
+        tg.setBackgroundColor('#121212');
     </script>
-  </body>
+
+    <script src="src/App.js"></script>
+</body>
 </html>
