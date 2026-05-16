@@ -1,11 +1,13 @@
 {
   "name": "lucky-bingo-bot",
   "version": "1.0.0",
-  "description": "Telegram Mini App Bingo Game",
-  "main": "api/bot.js",
+  "type": "module",
   "scripts": {
-    "start": "node api/bot.js",
-    "build": "echo 'Building frontend...'"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "node api/bot.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
@@ -14,7 +16,7 @@
     "socket.io": "^4.8.3",
     "telegraf": "^4.16.3"
   },
-  "engines": {
-    "node": "20.x"
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }

@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucky Bingo</title>
-    <link rel="stylesheet" href="src/App.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
     <script>
-        // ቴሌግራም ሚኒ አፕ መዘጋጀቱን ማረጋገጥ
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-        tg.expand(); // ሙሉ ስክሪን እንዲሆን ያደርጋል
-
-        // የቴሌግራም የጭንቅላት ክፍል (Header) ከዲዛይኑ ጋር እንዲሄድ
-        tg.setHeaderColor('#1f1f1f');
-        tg.setBackgroundColor('#121212');
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      tg.expand(); // ሙሉ ስክሪን እንዲሆን ያደርጋል
+      tg.setHeaderColor('#1f1f1f');
+      tg.setBackgroundColor('#121212');
     </script>
 
-    <script src="src/App.js"></script>
-</body>
+    <script type="module" src="/src/App.js"></script>
+  </body>
 </html>
